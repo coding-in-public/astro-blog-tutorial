@@ -1,0 +1,35 @@
+---
+// library imports
+import { Icon } from "astro-icon";
+
+// component imports
+import Link from "./Link.astro";
+
+// data imports
+import navData from "../data/navData";
+---
+
+<nav aria-label="Primary">
+  <div class="navbar">
+    <a href="/" class="logomark" aria-label="Go home">
+      <Icon name="logomark" width="60" />
+    </a>
+    <ul>
+      {
+        navData.map((item) => (
+          <Link
+            text={item.name}
+            href={item.path}
+            style="primary"
+            isFilled={false}
+            data-navLink
+          />
+        ))
+      }
+    </ul>
+  </div>
+</nav>
+
+<script>
+  import "../js/nav.js";
+</script>
