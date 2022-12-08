@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.12.1",
+    "@astrojs/sitemap": "^1.0.0",
     "astro": "^1.6.13",
     "astro-icon": "^0.8.0",
     "postcss": "^8.4.19",
