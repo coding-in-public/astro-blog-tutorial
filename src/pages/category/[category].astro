@@ -1,10 +1,10 @@
 ---
 // component imports
-import MainLayout from "../../layouts/MainLayout.astro";
-import PostCard from "../../components/PostCard.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import PostCard from "@components/PostCard.astro";
 
 // utils
-import { slugify, formatBlogPosts } from "../../js/utils";
+import { slugify, formatBlogPosts } from "@js/utils";
 
 export async function getStaticPaths() {
   return [

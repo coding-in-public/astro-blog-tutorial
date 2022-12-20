@@ -1,12 +1,12 @@
 ---
 // component imports
-import MainLayout from "../../layouts/MainLayout.astro";
-import PostCard from "../../components/PostCard.astro";
-import CategoryCloud from "../../components/CategoryCloud.astro";
-import Pagination from "../../components/Pagination.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import PostCard from "@components/PostCard.astro";
+import CategoryCloud from "@components/CategoryCloud.astro";
+import Pagination from "@components/Pagination.astro";
 
 // utils imports
-import { formatBlogPosts } from "../../js/utils";
+import { formatBlogPosts } from "@js/utils";
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = await Astro.glob("./*.md");

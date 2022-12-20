@@ -1,12 +1,12 @@
 ---
 // component import
-import PostHeader from "../components/PostHeader.astro";
-import CategoryCloud from "../components/CategoryCloud.astro";
-import MainLayout from "./MainLayout.astro";
-import RelatedPosts from "../components/RelatedPosts.astro";
+import PostHeader from "@components/PostHeader.astro";
+import CategoryCloud from "@components/CategoryCloud.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import RelatedPosts from "@components/RelatedPosts.astro";
 
 // util imports
-import { formatBlogPosts } from "../js/utils";
+import { formatBlogPosts } from "@js/utils";
 
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
