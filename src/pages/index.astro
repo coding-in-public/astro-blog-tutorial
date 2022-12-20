@@ -1,11 +1,11 @@
 ---
 // component imports
-import MainLayout from "../layouts/MainLayout.astro";
-import PostCard from "../components/PostCard.astro";
-import Link from "../components/Link.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import PostCard from "@components/PostCard.astro";
+import Link from "@components/Link.astro";
 
 // utils imports
-import { formatBlogPosts } from "../js/utils";
+import { formatBlogPosts } from "@js/utils";
 
 const allPosts = await Astro.glob("./blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
