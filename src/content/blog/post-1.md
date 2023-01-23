@@ -1,15 +1,14 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
-title: Building an Astro Post Tag Component
-date: 2022-12-03
-author: Anna Dixon
+title: A Post about Important Items Of Life
+date: 2022-11-20
+author: Darnell McClure
 image: {
-  src: "/images/post-6.jpg",
+  src: "/images/post-1.jpg",
   alt: "A picture of a coder",
 }
-description: In this project, we’ll build out a custom Astro component for post tags.
+description: Have you ever wondered what the most important items of life are? Well, wonder no more!
 draft: false
-category: Astro
+category: Reference Docs
 ---
 
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.

@@ -1,11 +1,10 @@
 ---
+import { getCollection, CollectionEntry } from "astro:content";
 import { formatBlogPosts, slugify } from "../js/utils";
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
-const formattedPosts = formatBlogPosts(allPosts);
-const allCategories = formattedPosts
-  .map((cat) => cat.frontmatter.category.toLowerCase())
-  .flat();
+const allPosts = await getCollection("blog");
+const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(allPosts);
+const allCategories = formattedPosts.map((cat) => cat.data.category).flat();
 
 const processedCats = allCategories.reduce((acc, category) => {
   // check if the category exists in the acc
@@ -13,19 +12,20 @@ const processedCats = allCategories.reduce((acc, category) => {
 
   return {
     ...acc,
-    [category]: value + 1
-  }
-}, {})
+    [category]: value + 1,
+  };
+}, {});
 
 const { showCount } = Astro.props;
-
 ---
 
 <ul class="categories">
   {
     Object.entries(processedCats).map(([key, val]) => (
       <li>
-        <a class="badge" href={`/category/${slugify(key)}/`}>{key} {showCount && `(${val})`}</a>
+        <a class="badge" href={`/category/${slugify(key)}/`}>
+          {key} {showCount && `(${val})`}
+        </a>
       </li>
     ))
   }

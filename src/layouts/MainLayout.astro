@@ -11,13 +11,13 @@ const {
   title = "My Astro Blog",
   description = "My musings about the Astro framework",
   image,
-  frontmatter,
+  data,
   robots,
 } = Astro.props;
 ---
 
 <html lang="en">
-  <MainHead {title} {description} {image} {frontmatter} {robots} />
+  <MainHead {title} {description} {image} {data} {robots} />
   <body>
     <Nav />
     <main>

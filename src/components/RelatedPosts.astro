@@ -8,13 +8,11 @@ const { relatedPosts } = Astro.props;
   relatedPosts.map((post) => (
     <div class="post">
       <h3 class="h4">
-        <a href={post.url}>{post.frontmatter.title}</a>
+        <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
       </h3>
       <small>
-        <a href={`/author/${slugify(post.frontmatter.author)}/`}>
-          {post.frontmatter.author}
-        </a>{" "}
-        • {formatDate(post.frontmatter.date)}
+        <a href={`/author/${slugify(post.data.author)}/`}>{post.data.author}</a>{" "}
+        • {formatDate(post.data.date)}
       </small>
     </div>
   ))

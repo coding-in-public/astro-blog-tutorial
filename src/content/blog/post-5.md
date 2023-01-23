@@ -1,19 +1,19 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
-title: A Post about Important Items Of Life
-date: 2022-11-20
-author: Darnell McClure
+title: JavaScript SchmavaScript
+date: 2022-12-05
+author: Victoria Greenfelder
 image: {
-  src: "/images/post-1.jpg",
+  src: "/images/post-5.jpg",
   alt: "A picture of a coder",
 }
-description: Have you ever wondered what the most important items of life are? Well, wonder no more!
+description: This is a blog post about the JavaScript programming language. Like it, love it, hate it, it's here to stay.
 draft: false
 category: Reference Docs
 ---
 
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
 
+## Heading 1
 Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
 
 Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.

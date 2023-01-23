@@ -1,4 +1,6 @@
 ---
+import { getCollection, CollectionEntry } from "astro:content";
+
 // component imports
 import MainLayout from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
@@ -7,8 +9,8 @@ import Link from "../components/Link.astro";
 // utils imports
 import { formatBlogPosts } from "../js/utils";
 
-const allPosts = await Astro.glob("./blog/*.md");
-const formattedPosts = formatBlogPosts(allPosts, {
+const allPosts = await getCollection("blog");
+const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(allPosts, {
   limit: 3,
 });
 ---
@@ -35,11 +37,7 @@ const formattedPosts = formatBlogPosts(allPosts, {
     <div class="post-container">
       {
         formattedPosts.map((post) => (
-          <PostCard
-            frontmatter={post.frontmatter}
-            url={post.url}
-            tagType="h3"
-          />
+          <PostCard data={post.data} url={post.slug} tagType="h3" />
         ))
       }
     </div>
