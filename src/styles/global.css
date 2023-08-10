@@ -382,7 +382,7 @@ button {
       margin-inline: auto;
       gap: var(--space-sm);
 
-      @media --sm {
+      @media (--sm) {
         display: flex;
         justify-content: space-between;
       }
@@ -403,7 +403,7 @@ button {
   align-items: center;
   margin-block: var(--space-xl);
 
-  @media --md {
+  @media (--md) {
     grid-template-columns: 1fr 2fr;
     place-content: center;
   }
@@ -416,7 +416,7 @@ button {
     object-fit: cover;
     object-position: center;
 
-    @media --md {
+    @media (--md) {
       justify-self: end;
     }
   }
@@ -436,11 +436,11 @@ button {
   gap: var(--space-md);
   align-items: start;
 
-  @media --md {
+  @media (--md) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media --lg {
+  @media (--lg) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -537,7 +537,7 @@ header {
     gap: var(--space-lg);
     margin-block-start: var(--space-xl);
 
-    @media --md {
+    @media (--md) {
       margin:0;
     }
 
@@ -546,11 +546,11 @@ header {
       gap: var(--space-2xs);
       padding: 0;
 
-      @media --sm {
+      @media (--sm) {
         flex: 1 1 40%;
       }
 
-      @media --md {
+      @media (--md) {
       text-align: left;
       justify-content: start;
       justify-items: start;
@@ -561,13 +561,13 @@ header {
     }
   }
 
-  @media --md {
+  @media (--md) {
     grid-template-columns: 1fr minmax(auto, 220px);
     gap: var(--space-lg);
     align-items: start;
   }
 
-  @media --lg {
+  @media (--lg) {
     grid-template-columns: 1fr minmax(auto, 300px);
   }
 }
@@ -577,7 +577,7 @@ header {
   box-shadow: var(--shadow-md);
   object-fit: cover;
 
-  @media --lg {
+  @media (--lg) {
     border-radius: var(--radius-md);
   }
 }
